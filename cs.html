@@ -37,78 +37,48 @@
 
 		<div class="container" style="margin-left: 0px; margin-right: 0px; max-width: 100%;">
 			<div class="jumbotron" style="text-align: center;">
-				<form action="#">
-					<select name="Select Subjects" style="width: 25%; margin-top: 32px;" placeholder="Select Subjects">
-						<option value="volvo">Select Sujects</option>
-						<option value="volvo">Maths</option>
-						<option value="saab">Digital electronics</option>
-						<option value="fiat">Physics</option>
-						<option value="audi">Chemistry</option>
+				<form  name="myForm"  method="post">
+					<select id="mySelect" name="subject" style="width: 25%; margin-top: 32px;" placeholder="Select Subjects">
+						<option value="All">Select Sujects</option>
+						<option value="math">Maths</option>
+						<option value="dig">Digital electronics</option>
+						<option value="phy">Physics</option>
+						<option value="chem">Chemistry</option>
 					</select>
 					<br><br>
-					<input style="margin-top: 12px;" type="submit">
+					<!-- <input style="margin-top: 12px;" type="submit"> -->
+					<button type="button" onclick="return validateForm()">Submit</button>
 				</form>
 
 			</div>
 
-			<div class="container" >
+			<div class="container" id="subjects" >
 				
 				<div class="row" style="margin-left: -36%; margin-right: -16%;">
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%">
+					<div class="card col-md" id="13" style="display:none; width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%">
 						<div class="container" style="margin: 0; max-width: 100%">
 							<h3>Maths-IIsem</h3>
 							<p>Contributer: rocky singh<p> 
 							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
 						</div>
 					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+					<div class="card col-md"  id="11" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
 						<div class="container" style="margin: 0; max-width: 100%">
 							<h3>Maths-IIsem</h3>
 							<p>Contributer: rocky singh<p> 
 							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
 						</div>
 					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+					<div class="card col-md"  id="10" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
 						<div class="container" style="margin: 0; max-width: 100%">
 							<h3>Maths-IIsem</h3>
 							<p>Contributer: rocky singh<p> 
 							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
 						</div>
 					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+					<div class="card col-md"  id="9" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
 						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
-							<p>Contributer: rocky singh<p> 
-							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="row" style="margin-left: -36%; margin-right: -16%; margin-top: 2%;">
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%">
-						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
-							<p>Contributer: rocky singh<p> 
-							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
-						</div>
-					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
-						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
-							<p>Contributer: rocky singh<p> 
-							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
-						</div>
-					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
-						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
-							<p>Contributer: rocky singh<p> 
-							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
-						</div>
-					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
-						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
+							<h3>Digital Electronics-IIsem</h3>
 							<p>Contributer: rocky singh<p> 
 							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
 						</div>
@@ -116,30 +86,61 @@
 				</div>
 
 				<div class="row" style="margin-left: -36%; margin-right: -16%; margin-top: 2%;">
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%">
+					<div class="card col-md" id="8" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%">
+						<div class="container" style="margin: 0; max-width: 100%">
+							<h3>Digital Electronics-IIsem</h3>
+							<p>Contributer: rocky singh<p> 
+							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
+						</div>
+					</div>
+					<div class="card col-md" id="7" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+						<div class="container" style="margin: 0; max-width: 100%">
+							<h3>Physics-IIsem</h3>
+							<p>Contributer: rocky singh<p> 
+							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
+						</div>
+					</div>
+					<div class="card col-md" id="6" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+						<div class="container" style="margin: 0; max-width: 100%">
+							<h3>Physics-IIsem</h3>
+							<p>Contributer: rocky singh<p> 
+							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
+						</div>
+					</div>
+					<div class="card col-md" id="5" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+						<div class="container" style="margin: 0; max-width: 100%">
+							<h3>Chemistry-IIsem</h3>
+							<p>Contributer: rocky singh<p> 
+							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="row" style="margin-left: -36%; margin-right: -16%; margin-top: 2%;">
+					<div class="card col-md" id="4" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%">
+						<div class="container" style="margin: 0; max-width: 100%">
+							<h3>Chemistry-IIsem</h3>
+							<p>Contributer: rocky singh<p> 
+							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
+						</div>
+					</div>
+					<div class="card col-md" id="3" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+						<div class="container" style="margin: 0; max-width: 100%">
+							<h3>Digital Electronics-IIsem</h3>
+							<p>Contributer: rocky singh<p> 
+							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
+						</div>
+					</div>
+					<div class="card col-md" id="2" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
 						<div class="container" style="margin: 0; max-width: 100%">
 							<h3>Maths-IIsem</h3>
 							<p>Contributer: rocky singh<p> 
 							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
 						</div>
 					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
+					<div class="card col-md" id="1" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
 						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
-							<p>Contributer: rocky singh<p> 
-							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
-						</div>
-					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
-						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
-							<p>Contributer: rocky singh<p> 
-							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
-						</div>
-					</div>
-					<div class="card col-md" style="width: 28%; padding: 14px; padding-right: 0px; margin: 0px; margin-right: 2%;">
-						<div class="container" style="margin: 0; max-width: 100%">
-							<h3>Maths-IIsem</h3>
+							<h3>Chemistry-IIsem</h3>
 							<p>Contributer: rocky singh<p> 
 							<a class="link btn btn-success  btn-responsive" href="#" target="_blank">Dowload</a>
 						</div>
@@ -152,6 +153,103 @@
 		</div>
 		
 	</div>
+
+	<script type="text/javascript">
+		
+		function validateForm() {
+
+			let x = document.getElementById("mySelect").value;
+			
+			if (x=='math') {
+
+				
+			document.getElementById('1').style.display = 'none';
+			document.getElementById('2').style.display = 'block';
+			document.getElementById('3').style.display = 'none';
+			document.getElementById('4').style.display = 'none';
+			document.getElementById('5').style.display = 'none';
+			document.getElementById('6').style.display = 'none';
+			document.getElementById('7').style.display = 'none';
+			document.getElementById('8').style.display = 'none';
+			document.getElementById('9').style.display = 'none';
+			document.getElementById('10').style.display = 'block';
+			document.getElementById('11').style.display = 'block';
+			document.getElementById('12').style.display = 'block';
+			document.getElementById('13').style.display = 'block';
+
+
+
+		  }
+
+		  if (x=='phy') {
+
+				
+			document.getElementById('1').style.display = 'none';
+			document.getElementById('2').style.display = 'none';
+			document.getElementById('3').style.display = 'none';
+			document.getElementById('4').style.display = 'none';
+			document.getElementById('5').style.display = 'none';
+			document.getElementById('6').style.display = 'block';
+			document.getElementById('7').style.display = 'block';
+			document.getElementById('8').style.display = 'none';
+			document.getElementById('9').style.display = 'none';
+			document.getElementById('10').style.display = 'none';
+			document.getElementById('11').style.display = 'none';
+			document.getElementById('12').style.display = 'none';
+			document.getElementById('13').style.display = 'none';
+
+
+
+
+		  }
+
+		  if (x=='chem') {
+
+			document.getElementById('1').style.display = 'block';
+				
+			document.getElementById('2').style.display = 'none';
+			document.getElementById('3').style.display = 'none';
+			document.getElementById('4').style.display = 'block';
+			document.getElementById('5').style.display = 'block';
+
+
+			document.getElementById('6').style.display = 'none';
+			document.getElementById('7').style.display = 'none';
+			document.getElementById('8').style.display = 'none';
+			document.getElementById('9').style.display = 'none';
+			document.getElementById('10').style.display = 'none';
+			document.getElementById('11').style.display = 'none';
+			document.getElementById('12').style.display = 'none';
+			document.getElementById('13').style.display = 'none';
+
+
+
+		  }
+
+		  if (x=='dig') {
+
+				
+			document.getElementById('1').style.display = 'none';
+			document.getElementById('2').style.display = 'none';
+			document.getElementById('3').style.display = 'block';
+
+			document.getElementById('4').style.display = 'none';
+			document.getElementById('5').style.display = 'none';
+			document.getElementById('6').style.display = 'none';
+			document.getElementById('7').style.display = 'none';
+			document.getElementById('8').style.display = 'block';
+			document.getElementById('9').style.display = 'block';
+
+			document.getElementById('10').style.display = 'none';
+			document.getElementById('11').style.display = 'none';
+			document.getElementById('12').style.display = 'none';
+			document.getElementById('13').style.display = 'none';
+
+
+
+		  }
+		}
+	</script>
 
 </body>
 </html>
